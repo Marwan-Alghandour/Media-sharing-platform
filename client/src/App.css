@@ -5,8 +5,19 @@
   align-items: start;
 }
 
+@media screen and (max-width: 768px) {
+  .wall {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .wall {
+    width: 40%;
+  }
+}
+
 .wall {
-  width: 40%;
   display: flex;
   justify-content: center;
   flex-direction: column;
