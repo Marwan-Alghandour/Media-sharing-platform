@@ -1,0 +1,35 @@
+#root {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: start;
+}
+
+.wall {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.img-container {
+  background-color: black;
+  background-clip: content-box;
+  height: 40vh;
+}
+
+.icon {
+  height: 5vh;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.btn {
+  position: fixed;
+  right: 0%;
+  bottom: 0%;
+  border: none !important;
+}
