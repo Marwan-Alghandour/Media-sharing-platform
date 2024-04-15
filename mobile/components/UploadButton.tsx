@@ -7,7 +7,7 @@ import useUploadMedia from "../hooks/useUploadMedia";
 
 const UploadButton = () => {
   const [visible, setVisible] = useState(false);
-  const { mutate, isPending, isSuccess } = useUploadMedia();
+  const { mutate, isPending } = useUploadMedia();
 
   const pickImage = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
@@ -27,9 +27,7 @@ const UploadButton = () => {
         } as any);
       });
 
-      mutate(formData);
-
-      isSuccess && setVisible(true);
+      mutate(formData, { onSuccess: () => setVisible(true) });
     }
   };
 
