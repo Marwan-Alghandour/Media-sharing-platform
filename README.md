@@ -15,10 +15,10 @@ Client-server architecture, architecture of a computer network in which many cli
 - @tanstack/react-query
 
 ### Mobile
-- React native
+- React Native
 - React Hooks
 - Expo
-- React native paper
+- React Native Paper
 - Axios
 - @tanstack/react-query
 
@@ -113,7 +113,7 @@ The client should now be running on http://localhost:5173.
 8. **Start the mobile application:**
 
    ```bash
-   npm install
+   npm start
 
 11. **Scan the QR-Code.**
 
